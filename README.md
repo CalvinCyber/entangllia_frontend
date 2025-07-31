@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# ✨ Entanglia MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Entanglia is an experimental **neural matchmaking engine** powered by:
+- 🤖 Deep Learning (Keras)
+- ⚛️ Quantum-inspired probabilistic logic
+- 🌐 Solana wallet authentication and blockchain interaction
+- 📍 Real-time geolocation and smart reservation system
 
-Currently, two official plugins are available:
+> Connect. Discover. Reserve. All without centralized identity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔐 **Solana Wallet Integration**  
+  Connect using Phantom or Solflare to establish secure decentralized identity.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 🧠 **Quantum-AI Matchmaking**  
+  Matches are made using a combination of Keras-powered neural nets and probabilistic scoring.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📷 **Image-Based Profile Matching**  
+  Upload an image + input personal traits and bio — Entanglia generates predictions and matches.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 📍 **Nearby Destinations**  
+  Automatically fetches local attractions like parks, cafes, and bars using geolocation APIs.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- 💬 **Encrypted Chat**  
+  Matched users can securely chat using session tokens — no personal data is stored.
+
+- 📆 **Event Reservations**  
+  Interactive modal for reserving tables or venues at local Entanglia partners (e.g., Orion's Roof, Becca VB, The Shack, Aloft Chesapeake).
+
+---
+
+## 📦 Tech Stack
+
+| Area | Stack |
+|------|-------|
+| Frontend | React, TypeScript |
+| Wallet | Solana Wallet Adapter, Phantom, Solflare |
+| AI | Keras (DL model) |
+| Backend (API) | JSON-RPC to Flask server |
+| Geolocation | AbstractAPI + Overpass OSM |
+| Deployment | Netlify (for demo frontend) |
+| Blockchain | Solana + Helius RPC endpoint |
+
+---
+
+## 🖼️ How It Works
+
+1. **Connect Wallet**:  
+   Authenticate via Phantom or Solflare.
+
+2. **Create Profile**:  
+   Enter alias, description, optional bio, and upload an image.
+
+3. **Register**:  
+   Submit your profile. Entanglia stores encrypted predictions and fetches local destinations.
+
+4. **Find Matches**:  
+   The system computes matches based on AI and probabilistic models.
+
+5. **Engage**:  
+   - ❤️ React with an emoji (future: microtransaction).
+   - 💬 Securely chat with your match.
+   - 🗓️ Book a reservation with Entanglia partners.
+
+---
